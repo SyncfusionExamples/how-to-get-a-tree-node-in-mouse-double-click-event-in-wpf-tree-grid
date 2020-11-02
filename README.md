@@ -1,2 +1,3 @@
-# how-to-get-row-index-of-node-in-wpf-tree-view
-How to get row index of node in WPF TreeView (SfTreeView) ?
+# How to get row index of node when mouse double click in WPF TreeGrid (SfTreeGrid) ?
+
+How to get row index of node when mouse double click in WPF TreeGrid (SfTreeGrid) ?
