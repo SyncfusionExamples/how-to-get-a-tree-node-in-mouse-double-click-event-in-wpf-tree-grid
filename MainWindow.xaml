@@ -1,0 +1,34 @@
+﻿<Window x:Class="SfTreeGridDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SfTreeGridDemo"
+         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1000">
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <Grid>
+        <syncfusion:SfTreeGrid Name="treeGrid"
+                               AutoGenerateColumns="False"
+                               AllowEditing="True"
+                               ChildPropertyName="ReportsTo"
+                               ParentPropertyName="ID"
+                               ItemsSource="{Binding Employees}"
+                               SelfRelationRootValue="-1"
+                               AllowDraggingRows="True"
+                               AllowDrop="True">
+            <syncfusion:SfTreeGrid.Columns>
+                <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" />
+                <syncfusion:TreeGridTextColumn  MappingName="LastName"  HeaderText="Last Name" />
+                <syncfusion:TreeGridCheckBoxColumn MappingName="IsSelected"  HeaderText="Is Selected" />
+                <syncfusion:TreeGridTextColumn MappingName="ID"  HeaderText="ID" />
+                <syncfusion:TreeGridTextColumn  MappingName="Title"  HeaderText="Title"  />
+                <syncfusion:TreeGridCurrencyColumn  MappingName="Salary"  HeaderText="Salary" />
+                <syncfusion:TreeGridTextColumn  MappingName="ReportsTo"  HeaderText="Reports To"  />
+            </syncfusion:SfTreeGrid.Columns>
+        </syncfusion:SfTreeGrid>
+    </Grid>
+</Window>
