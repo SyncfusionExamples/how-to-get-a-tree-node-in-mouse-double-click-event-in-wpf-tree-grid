@@ -27,6 +27,8 @@ private void TreeGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
 
 ![Shows the mouse double clicked TreeNode details in SfTreeGrid](GetTreeNodeViewMouseDoubleClick.gif)
 
+KB article - [How to get a tree node in mouse double click event in WPF TreeGrid (SfTreeGrid)?](https://www.syncfusion.com/kb/12044/how-to-get-a-tree-node-in-mouse-double-click-event-in-wpf-treegrid-sftreegrid)
+
 ## Requirements to run the demo
 Visual Studio 2015 and above versions
 
