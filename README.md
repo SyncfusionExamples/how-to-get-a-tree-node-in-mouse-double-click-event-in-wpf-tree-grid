@@ -4,7 +4,7 @@ In [TreeGrid](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfT
 
 The row index of [TreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) in the clicked position can be retrieved by resolving the mouse click position through [TreeGridPanel.PointToCellRowColumnIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridPanel_PointToCellRowColumnIndex_System_Windows_Point_System_Boolean_). now, you can get the current [TreeNode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) by passing the **RowIndex** in [GetNodeAtRowIndex](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_GetNodeAtRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_System_Int32_) method in TreeGrid.
 
-```C#
+```csharp
 
 this.treeGrid.MouseDoubleClick += TreeGrid_MouseDoubleClick;
 
