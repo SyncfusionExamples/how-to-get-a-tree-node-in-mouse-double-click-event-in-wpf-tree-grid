@@ -10,13 +10,13 @@ this.treeGrid.MouseDoubleClick += TreeGrid_MouseDoubleClick;
 
 private void TreeGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
 {
-      var treeGridPanel = this.treeGrid.GetTreePanel();
-      // get the row and column index based on the pointer position 
-      var rowColumnIndex = treeGridPanel.PointToCellRowColumnIndex(e.GetPosition(treeGridPanel));
-      if (rowColumnIndex.IsEmpty)
-         return;
-      var treeNodeAtRowIndex = treeGrid.GetNodeAtRowIndex(rowColumnIndex.RowIndex);                       
-      MessageBox.Show("TreeNode : " + treeNodeAtRowIndex.ToString());
+     var treeGridPanel = this.treeGrid.GetTreePanel();
+     // get the row and column index based on the pointer position 
+     var rowColumnIndex = treeGridPanel.PointToCellRowColumnIndex(e.GetPosition(treeGridPanel));
+     if (rowColumnIndex.IsEmpty)
+        return;
+     var treeNodeAtRowIndex = treeGrid.GetNodeAtRowIndex(rowColumnIndex.RowIndex);                       
+     MessageBox.Show("TreeNode : " + treeNodeAtRowIndex.ToString());
 }
 
 ```
